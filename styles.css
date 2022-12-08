@@ -1,0 +1,16 @@
+body {background-color: azure;}
+.logo {height: 45px;
+        width: 45px;
+        background-color: transparent;}
+.banner{background-color: #F3ED20;}
+.Inicio{position: relative;}
+.boton-transparente{background-color: transparent;
+                    margin-top: 10px;
+                    margin-bottom: 10px;}
+.texto-columna {margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 50px;
+                margin-right: 50px;}
+.fijado {position: fixed ;}
+p.fijado {margin-right: 10px;}
+textobanner {}
