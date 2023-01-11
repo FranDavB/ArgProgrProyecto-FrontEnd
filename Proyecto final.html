@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="dist\css\bootstrap.css" rel="stylesheet">
+
+    <title> Franco David Baretta</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown show Menu-celular">
+                <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="logo-contacto"src="src imagenes\Three bars icon.png">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="btn" href="#acercaDe">ACERCA DE</a>  
+                    <a class="btn" href="#Experiencia">EXPERIENCIA</a> 
+                    <a class="btn" href="#Educacion">FORMACIÓN</a>
+                    <a class="btn" href="#Proyectos">PROYECTOS</a>  
+                    <a class="btn">Facebook</a> 
+                    <a class="btn">Linkeid</a>
+                    <a class="btn">Gmail</a>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li> <a class="btn" href="#acercaDe"> <text>Acerca de</text> </a>  </li>
+                    <li> <a class="btn" href="#Experiencia"> <text>Experiencia</text> </a>  </li>
+                    <li> <a class="btn" href="#Educacion"> <text>Formación</text> </a>  </li>
+                    <li> <a class="btn" href="#Proyectos"> <text>Proyectos</text> </a>  </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav-links-contacto">
+                    <li> <a class="btn" href="https://www.facebook.com/franco.baretta.5"> <img src="src imagenes\logoFacebook.png" class="logo-contacto"> </a>  </li>
+                    <li> <a class="btn"> <img src="src imagenes\logoGmail.png" class="logo-contacto"> </a>  </li>
+                    <li> <a class="btn"> <img src="src imagenes\logoLinkedin.png" class="logo-contacto"> </a>  </li>
+                    <li> <button href="" class="btn" data-toggle="modal" data-target="#ventanaLogin"><text>Ingreso</text></button>  </li>
+                </ul>
+            </div>
+            <div class="Menu-celular">
+                <button href="" class="btn" data-toggle="modal" data-target="#ventanaLogin"><img src="src imagenes\logoLogin.png" class="logo-contacto"></button> 
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="primer-Container" id="acercaDe">
+            <img src="src imagenes\foto-Perfil.jpg" class="foto-celular">
+            <img src="src imagenes\foto-Perfil.jpg" class="foto">
+            <div class="container">
+                <div class="texto">
+                    <div class="titular">
+                        <h2 id="saludo"> ¡Hola! Soy Franco</h2>
+                        <button href="" class="btn" data-toggle="modal" data-target=> <img src="src imagenes\Edit_icon.svg.png" class="logo-editar"> </button>
+                    </div>
+                    <div class="descripcion">
+                        <h1 id="titulo"> BIÓLOGO Y PROGRAMADOR WEB </h1>
+                        <p> 
+                            Entusiasta por las ciencias, investigador del comportamiento animal y 
+                            programador de aplicaciones web. ¡Bienvenido a mi sitio!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="Experiencia">
+            <div class="texto">
+                <div class="titular">
+                    <h1> Experiencia </h1>
+                    <button href="" class="btn" data-toggle="modal" data-target="#ventanaExperiencia"> <img src="src imagenes\Edit_icon.svg.png" class="logo-editar"> </button>  
+                </div>
+                <div class="lista">
+                    <ul class="madrelista" id="experiencia-madre-lista">
+                        <li> 
+                            <ul class="unidadlista">
+                                <li> <img class="logoimagen" src="data:image/png;base64,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"> </li>
+                                <li class="empresa"> River Plate </li>
+                                <li> Buenos Aires </li>
+                                <li> Enero 2021 - Enero 2022</li>
+                                <li> <button class="btn btn-dark">Editar</button> <button class="btn btn-dark">Eliminar</button></li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <ul class="unidadlista">
+                                <li> <img class="logoimagen" src="data:image/png;base64,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"> </li>
+                                <li class="empresa"> Google </li>
+                                <li> San Diego </li>
+                                <li> Enero 2021 - Enero 2022</li>
+                                <li> <button class='btn btn-dark'>Editar</button> <button class='btn btn-dark'>Eliminar</button></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container"  id="Educacion">
+            <div class="texto">
+                <div class="titular">
+                    <h1> Educación </h1>
+                    <button href="" class="btn" data-toggle="modal" data-target="#ventanaEducacion"> <img src="src imagenes\Edit_icon.svg.png" class="logo-editar"> </button>  
+                </div>
+                <div class="lista">
+                    <ul class="madrelista" id="experiencia-madre-lista">
+                        <li> 
+                            <ul class="unidadlista">
+                                <li> <img class="logoimagen" src="https://images.vexels.com/media/users/3/131298/isolated/preview/65524ab3c33f3f219fbe7f0ab6d051c8-icono-de-graduado-masculino.png"> </li>
+                                <li class="empresa"> E.E.S.O Nº 204 "Domingo de Oro" </li>
+                                <li> Rafaela </li>
+                                <li> Bachiller en Ciencias Naturales</li>
+                                <li> 2011 - 2015</li>
+                                <li> <button class="btn btn-dark">Editar</button> <button class="btn btn-dark">Eliminar</button></li>
+                            </ul>
+                        </li>
+                        <li> 
+                            <ul class="unidadlista">
+                                <li> <img class="logoimagen" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Universidad_Nacional_de_C%C3%B3rdoba.png"> </li>
+                                <li class="empresa"> Universidad Nacional de Córdoba </li>
+                                <li> Córdoba </li>
+                                <li> Biólogo </li>
+                                <li> 2016 - Actualidad </li>
+                                <li> <button class='btn btn-dark'>Editar</button> <button class='btn btn-dark'>Eliminar</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="Proyectos">
+            <div class="texto">
+                <div class="titular">
+                    <h1 > Proyectos </h1>
+                    <button href="" class="btn" data-toggle="modal" data-target="#ventanaProyectos"> <img src="src imagenes\Edit_icon.svg.png" class="logo-editar"> </button>              
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- forma editar proyectos modal-->
+
+    <div class="modal fade" id="ventanaProyectos" tabindex="-1" role="dialog" aria-labelledby="tituloLogin" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-background">
+
+                <div class="modal-header">
+                    <h4 class="font-weight-bold centrado" id="tituloLogin"> Proyectos realizados </h4>
+                    <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true"> &times; </span>
+                    </button>
+                </div>
+
+                <form id="editar-proyectos">
+                <div class="modal-body" id="form-editar">
+                        <input type="text" name="exp-logo" id="exp-logo" placeholder="Ingrese url logo"> <br> <br>
+                        <input type="text" name="exp-empresa" id="exp-empresa" placeholder="Ingrese nombre de la empresa"> <br> <br>
+                        <input type="text" name="exp-ciudad" id="exp-ciudad" placeholder="Ciudad"> <br> <br>
+                        <input type="text" name="exp-fecha" id="exp-fecha" placeholder="Fecha de inicio - Fecha de finalización"> <br> <br>
+                </div>
+
+                <div class="modal-footer" id="form-editar-submit">
+                    <button class="btn btn-dark" type="button" data-dismiss="modal"> Cerrar </button>
+                    <button class="btn btn-dark" type="submit" name="submit" value="submit"> Aceptar </button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- forma editar educación modal-->
+
+    <div class="modal fade" id="ventanaEducacion" tabindex="-1" role="dialog" aria-labelledby="tituloLogin" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-background">
+
+                <div class="modal-header">
+                    <h4 class="font-weight-bold centrado" id="tituloLogin"> Instituciones Educativas </h4>
+                    <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true"> &times; </span>
+                    </button>
+                </div>
+
+                <form id="editar-educacion">
+                <div class="modal-body" id="form-editar">
+                        <input type="text" name="exp-logo" id="exp-logo" placeholder="Ingrese url logo"> <br> <br>
+                        <input type="text" name="exp-empresa" id="exp-empresa" placeholder="Ingrese nombre de la empresa"> <br> <br>
+                        <input type="text" name="exp-ciudad" id="exp-ciudad" placeholder="Ciudad"> <br> <br>
+                        <input type="text" name="exp-fecha" id="exp-fecha" placeholder="Fecha de inicio - Fecha de finalización"> <br> <br>
+                </div>
+
+                <div class="modal-footer" id="form-editar-submit">
+                    <button class="btn btn-dark" type="button" data-dismiss="modal"> Cerrar </button>
+                    <button class="btn btn-dark" type="submit" name="submit" value="submit"> Aceptar </button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- forma editar experiencia modal-->
+
+
+    <div class="modal fade" id="ventanaExperiencia" tabindex="-1" role="dialog" aria-labelledby="tituloLogin" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-background">
+
+                <div class="modal-header">
+                    <h4 class="font-weight-bold centrado" id="tituloLogin"> Editar experiencia </h4>
+                    <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true"> &times; </span>
+                    </button>
+                </div>
+
+                <form id="editar-experiencia">
+                <div class="modal-body" id="form-editar">
+                        <input type="text" name="exp-logo" id="exp-logo" placeholder="Ingrese url logo"> <br> <br>
+                        <input type="text" name="exp-empresa" id="exp-empresa" placeholder="Ingrese nombre de la empresa"> <br> <br>
+                        <input type="text" name="exp-ciudad" id="exp-ciudad" placeholder="Ciudad"> <br> <br>
+                        <input type="text" name="exp-fecha" id="exp-fecha" placeholder="Fecha de inicio - Fecha de finalización"> <br> <br>
+                </div>
+
+                <div class="modal-footer" id="form-editar-submit">
+                    <button class="btn btn-dark" type="button" data-dismiss="modal"> Cerrar </button>
+                    <button class="btn btn-dark" type="submit" name="submit" value="submit" id="button-experiencia-submit"> Aceptar </button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Login -->
+
+    <div class="modal fade" id="ventanaLogin" tabindex="-1" role="dialog" aria-labelledby="tituloLogin" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-background">
+
+                <div class="modal-header">
+                    <h4 class="font-weight-bold centrado" id="tituloLogin"> Ingreso </h4>
+                    <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true"> &times; </span>
+                    </button>
+                </div>
+
+                <form id="login">
+                <div class="modal-body" id="form-login">
+                        <input type="text" name="user-email" id="user-email" placeholder="Ingrese su email"> <br> <br>
+                        <input type="text" name="user-password" id="user-password" placeholder="Ingrese su contraseña"> <br> <br>
+
+                </div>
+
+                <div class="modal-footer" id="form-login-submit">
+                    <button class="btn btn-dark" type="button" data-dismiss="modal"> Cerrar </button>
+                    <button class="btn btn-dark" type="submit" name="submit" value="submit" id="button-loguear">Loguear</button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+        
+    
+    <!-- Typescript output -->
+    <script src="output\app.js" type="text/javascript"></script>
+
+     <!-- Plugins JS-->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+     <!-- Bootstrap JS -->
+    <script type="text/javascript" src="dist\js\bootstrap.bundle.js"> </script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
